@@ -1,0 +1,78 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+body{
+    background-image: url(image/Burlap\ Old\ Vintage\ Antique\ Background.jpeg);
+}
+nav{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#logo{
+    width: 40px;
+}
+.home{
+    color: white;
+    background-color: rgb(5, 5, 5);
+    text-align: center;
+    font-size: xx-large;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    border: 2px solid white;
+}
+.home h1{
+    margin-top: 5%;
+}
+#pic{
+    float: left;}
+.heading{
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+}
+.container{
+    text-align: center;
+    padding: 3%;
+}
+.container a {
+    color: inherit;
+    text-decoration: none;
+}
+.login{
+    padding:20px;
+    margin-left: 25%;
+    width:50%;
+    text-align: center;
+}
+.card p{
+    text-align: justify;
+}
+.login .btn{margin-top: 10px;}
+.login p{
+    text-align: right;
+}
+
+.top { 
+    margin: 20px;
+}
+.working:hover {
+    color:blue; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+.signup{
+    padding: 20px;
+    width:80%;
+    margin-left:10%;
+    text-align: center;
+}
+.container-d{
+    margin: 20px;
+    text-align: center;
+}
+.container-d p{text-align: justify;}
