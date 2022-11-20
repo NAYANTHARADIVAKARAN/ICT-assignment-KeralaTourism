@@ -37,16 +37,19 @@
         </div>
       </nav>
         <!--Header part end--> 
-        <form class="login">
+        <form class="login" onsubmit="return validate()" action="index.html">
           <div class="form-floating mb-3 mx-auto">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <input type="text" class="form-control" id="email" placeholder="name@example.com">
+            <label for="email">Email address</label>
+            <small id="emailerror"></small>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <label for="password">Password</label>
+            <small id="passworderror"></small>
           </div><p> New user ?--<a href="signup.html">Sign up</a></p>
           <button type="submit" class="btn btn-primary">Login</button>
         </form>
+        <script src="script.js"></script>
 </body>
 </html>

@@ -38,38 +38,43 @@
       </nav>
         <!--Header part end--> 
 
-        <form class="signup row g-3">
+        <form class="signup row g-3" onsubmit="return signupvalidate()" action="login.html">
           <div class="col-md-6 form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Firstname">
-            <label for="floatingInput">Firstname</label>
+            <input type="text" class="form-control" id="fname" placeholder="Firstname" required>
+            <label for="fname">Firstname</label>
           </div>
           <div class="col-md-6 form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Lastname">
-            <label for="floatingInput">Lastname</label>
+            <input type="text" class="form-control" id="lname" placeholder="Lastname" required>
+            <label for="lname">Lastname</label>
           </div>
           <div class="col-md-6 form-floating mb-3">
-            <input type="Date" class="form-control" id="floatingInput" >
+            <input type="Date" class="form-control" id="dob" required>
             <label for="floatingInput">Date of Birth</label>
           </div>
           <div class="col-md-6 form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="0000000000" >
+            <input type="text" class="form-control" id="phone" placeholder="0000000000" >
             <label for="floatingInput">Phone </label>
+            <small id="phoneerror"></small>
           </div>
           <div class="col-md-12 form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="text" class="form-control" id="email" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
+            <small id="emailerror"></small>
           </div>
           <div class=" col-md-6 form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="password" placeholder="Password">
             <label for="floatingPassword">Password</label>
+            <small id="passworderror"></small>
           </div>
           <div class=" col-md-6 form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Password">
+            <input type="text" class="form-control" id="rpassword" placeholder="Password">
             <label for="floatingPassword">Re-enter Password</label>
+            <small id="passwordmatcherror"></small>
           </div>
           <div class="col-12">
             <button type="submit" class="btn btn-primary">Sign up</button>
           </div>
         </form> 
+        <script src="script.js"></script>
 </body>
 </html>
